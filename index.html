@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Key Account Analyst Candidates — Rubicon</title>
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=key%20account%20analyst&amp;sz=128" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #00a599;
+      --primary-dark: #008c82;
+      --primary-deeper: #00736b;
+      --primary-soft: #00a59926;
+      --primary-light: #00a59914;
+      --accent-light: #4dc0b8;
+      --dark: #093944;
+      --highlight: #f6f7fb;
+      --bg-light: #27515a;
+      --bg-subtle: #3a6169;
+      --bg-page: #08343f;
+      --bg-card: #1d4953;
+      --bg-card-hover: #2b555e;
+      --white: #FFFFFF;
+      --text-primary: #ffffff;
+      --text-mid: rgba(255,255,255,0.82);
+      --text-light: rgba(255,255,255,0.65);
+      --text-muted: rgba(255,255,255,0.5);
+      --on-dark: #ffffff;
+      --on-dark-mid: rgba(255,255,255,0.82);
+      --on-dark-light: rgba(255,255,255,0.65);
+      --on-dark-muted: rgba(255,255,255,0.15);
+      --border: rgba(255,255,255,0.14);
+      --border-strong: rgba(255,255,255,0.25);
+      --tag-bg: #00a59933;
+      --tag-color: #4dc0b8;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+      --shadow-md: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06);
+      --shadow-lg: 0 1px 3px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.08);
+      --radius: 16px;
+      --font-heading: 'Inter', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-meta: 'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); font-size: 16px; color: var(--text-primary); background: var(--bg-page); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* ── Scroll animations ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Hero ── */
+    .hero-top-bar { background: linear-gradient(90deg, var(--primary), var(--accent-light)); height: 4px; width: 100%; }
+    .hero { background: linear-gradient(155deg, var(--dark) 0%, var(--primary-deeper) 50%, var(--primary-dark) 100%); color: var(--white); padding: 72px 60px 64px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -40%; right: -15%; width: 700px; height: 700px; background: radial-gradient(circle, #f6f7fb12 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: -30%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, #00a5990d 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+    .hero-brand { display: flex; align-items: center; gap: 16px; margin-bottom: 48px; }
+    .hero-brand .logo-img { height: 32px; width: auto; filter: brightness(0) invert(1); }
+    .hero-brand .logo-sep { width: 1px; height: 24px; background: rgba(255,255,255,0.25); }
+    .hero-brand .logo-sub { font-family: var(--font-meta); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+    .hero-eyebrow { display: inline-block; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 100px; padding: 6px 18px; font-family: var(--font-meta); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px; color: var(--highlight); }
+    .hero h1 { font-family: var(--font-heading); font-size: 50px; font-weight: 400; line-height: 1.15; max-width: 720px; margin-bottom: 16px; letter-spacing: -0.02em; }
+    .hero h1 strong { font-weight: 700; }
+    .hero-sub { font-size: 17px; color: rgba(255,255,255,0.55); max-width: 660px; font-weight: 400; line-height: 1.7; margin-bottom: 44px; }
+    .hero-meta { display: flex; gap: 40px; flex-wrap: wrap; }
+    .hero-meta-item { display: flex; flex-direction: column; gap: 4px; }
+    .hero-meta-label { font-family: var(--font-meta); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #00a599e6; }
+    .hero-meta-value { font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.75); }
+
+    /* ── Editorial / Intro ── */
+    .editorial { max-width: 780px; margin: 0 auto; padding: 80px 40px; }
+    .editorial-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 20px; }
+    .editorial-text { font-size: 17px; line-height: 1.85; color: var(--text-mid); }
+    .editorial-text p { margin-bottom: 16px; }
+    .editorial-text p:last-child { margin-bottom: 0; }
+    .editorial-divider { width: 48px; height: 3px; background: var(--primary); border-radius: 2px; margin-top: 32px; }
+
+    /* ── Candidates section ── */
+    .candidates-section { background: var(--bg-light); padding: 80px 0; }
+    .candidates-header { text-align: center; padding: 0 24px 48px; }
+    .candidates-header h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+    .candidates-header p { font-family: var(--font-meta); font-size: 14px; color: var(--text-light); }
+
+    .batch-switcher { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 0 auto 40px; max-width: 800px; padding: 0 24px; }
+    .batch-switcher[data-count="1"] { display: none; }
+    .batch-btn { display: flex; align-items: center; gap: 8px; padding: 11px 22px; border: 2px solid var(--border); border-radius: 10px; background: var(--bg-card); font-family: var(--font-meta); font-size: 13px; font-weight: 600; color: var(--text-light); cursor: pointer; transition: all 0.2s ease; }
+    .batch-btn:hover { border-color: var(--primary); color: var(--text-primary); }
+    .batch-btn.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .batch-count { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--primary); color: white; font-size: 11px; font-weight: 700; }
+    .batch-btn.active .batch-count { background: var(--highlight); color: var(--dark); }
+    .batch-panel.hidden { display: none; }
+
+    .candidates { max-width: 900px; margin: 0 auto; padding: 0 24px 40px; display: flex; flex-direction: column; gap: 24px; }
+
+    /* ── Card design ── */
+    .candidate-card { max-width: 1100px; margin: 0 auto 40px; padding: 0 40px; }
+    .card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.1); }
+    .card.featured { box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06), 0 0 0 1px #00a59933; }
+    .card-top { background: var(--dark); padding: 36px 44px; display: flex; justify-content: space-between; align-items: flex-start; }
+    .card-identity { display: flex; align-items: center; gap: 20px; }
+    .card-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: none; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: white; flex-shrink: 0; font-family: var(--font-heading); }
+    .card-avatar.featured-avatar { background: var(--highlight); color: var(--dark); }
+    .card-name { font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: white; margin-bottom: 4px; }
+    .card-location { font-size: 14px; color: var(--on-dark-mid); display: flex; align-items: center; gap: 6px; }
+    .card-badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+    .badge { font-family: var(--font-meta); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; }
+    .badge-shortlisted { background: #00a59933; color: var(--primary); border: 1px solid #00a59966; }
+    .card-rate { text-align: right; }
+    .card-rate-amount { font-size: 24px; font-weight: 700; color: var(--primary); font-family: var(--font-heading); }
+    .card-rate-period { font-family: var(--font-meta); font-size: 10px; color: var(--on-dark-mid); text-transform: uppercase; letter-spacing: 1px; }
+    .tap-badge { display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 4px 10px; border-radius: 6px; font-family: var(--font-meta); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; }
+
+    .tags-row { padding: 0 44px 16px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { display: inline-block; padding: 5px 14px; border-radius: 100px; font-family: var(--font-meta); font-size: 11px; font-weight: 600; }
+    .tag-filled { background: var(--tag-bg); color: var(--tag-color); }
+    .tag-filled:nth-child(3) { background: var(--highlight); color: var(--dark); }
+    .tag-outlined { background: var(--bg-subtle); color: var(--text-mid); border: 1.5px solid var(--border-strong); }
+
+    .card-body { padding: 40px 44px; color: var(--text-mid); }
+    .card-section { margin-bottom: 0; }
+    .card-section-title { font-family: var(--font-meta); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 16px; margin-top: 32px; }
+    .card-section-title:first-of-type { margin-top: 0; }
+    .card-narrative { font-size: 16px; line-height: 1.85; color: var(--text-mid); margin-bottom: 32px; font-style: italic; border-left: 3px solid var(--primary); padding-left: 20px; }
+    .card-narrative strong { color: var(--text-primary); font-weight: 600; font-style: normal; }
+    .experience-list { display: flex; flex-direction: column; gap: 20px; }
+    .exp-item { display: flex; gap: 16px; align-items: flex-start; }
+    .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 6px; }
+    .exp-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); flex-shrink: 0; }
+    .exp-line { width: 1px; flex: 1; background: #00a59933; margin-top: 6px; min-height: 30px; }
+    .exp-content { flex: 1; padding-bottom: 4px; }
+    .exp-role { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+    .exp-company { font-size: 13px; color: var(--text-light); margin-top: 2px; }
+    .exp-highlight { font-size: 13px; color: var(--primary); margin-top: 4px; }
+    .tags-cluster { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ctag { font-family: var(--font-meta); font-size: 11px; padding: 6px 14px; border-radius: 6px; background: var(--bg-subtle); color: var(--text-mid); }
+    .ctag-key { background: #00a5991a; color: var(--primary); font-weight: 600; }
+    .fit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .fit-item { background: var(--bg-subtle); padding: 14px 16px; border-radius: 8px; border: 1px solid var(--border-strong); overflow: visible; word-wrap: break-word; }
+    .fit-label { font-size: 12px; color: var(--text-mid); line-height: 1.5; display: block; overflow: visible; white-space: normal; }
+    .strength-bars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+    .bar-item { display: flex; flex-direction: column; gap: 6px; }
+    .bar-label { font-family: var(--font-meta); font-size: 12px; color: var(--text-mid); }
+    .bar-track { height: 5px; background: var(--bg-subtle); border-radius: 3px; overflow: hidden; }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary-dark), var(--primary)); border-radius: 3px; transition: width 1.5s ease; }
+    .card-actions { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+    .video-intro-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; background: transparent; border: 1.5px solid var(--primary); border-radius: 6px; color: var(--primary); font-family: var(--font-meta); font-size: 13px; font-weight: 600; letter-spacing: 0.3px; text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease; }
+    .video-intro-btn:hover { background: var(--primary); color: #fff; transform: translateY(-1px); }
+
+    .experience-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); }
+    .exp-dates { font-size: 12px; color: var(--text-light); white-space: nowrap; }
+
+    .strength-list { padding-left: 18px; }
+    .strength-list li { font-size: 14px; color: var(--text-mid); margin-bottom: 8px; line-height: 1.6; }
+
+    .card-footer { display: flex; align-items: center; justify-content: space-between; padding: 16px 44px; background: var(--bg-subtle); border-top: 1px solid var(--border); }
+    .footer-note { font-size: 13px; color: var(--text-light); }
+    .footer-note strong { color: var(--text-primary); }
+    .btn-group { display: flex; gap: 8px; }
+    .btn-card { display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px; border-radius: 8px; font-family: var(--font-meta); font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.15s; cursor: pointer; }
+    .btn-outline { background: var(--bg-card); color: var(--primary); border: 1.5px solid var(--primary); }
+    .btn-outline:hover { background: var(--tag-bg); }
+    .btn-primary-card { background: var(--primary); color: white; border: 1.5px solid var(--primary); }
+    .btn-primary-card:hover { background: var(--primary-dark); }
+    .btn-card svg { width: 15px; height: 15px; }
+    .btn-tap { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; border: none; }
+
+    .card-recruiter-note { margin: 0; padding: 20px 24px; background: linear-gradient(135deg, #00a5990d, #00a59905); border-left: 3px solid var(--primary); border-radius: 0 10px 10px 0; }
+    .card-recruiter-note .recruiter-note-title { font-family: var(--font-meta); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 8px; }
+    .card-recruiter-note p { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+
+    /* ── Comparison table ── */
+    .comparison-section { max-width: 1100px; margin: 20px auto 40px; padding: 0 40px; }
+    .comparison-table-wrap { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow-md); }
+    .comparison-table { width: 100%; border-collapse: collapse; background: var(--bg-card); font-size: 13px; color: var(--text-mid); border-radius: 12px; overflow: hidden; }
+    .comparison-table thead th { background: var(--dark); color: var(--primary); padding: 14px 16px; text-align: left; font-family: var(--font-meta); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    .comparison-table thead th:first-child { border-radius: 14px 0 0 0; }
+    .comparison-table thead th:last-child { border-radius: 0 14px 0 0; }
+    .comparison-table tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody tr:hover { background: var(--bg-card-hover); }
+    .comparison-table .highlight-cell { background: #00a5991a; font-weight: 600; color: var(--primary); }
+
+    /* ── Advisor ── */
+    .advisor-section { max-width: 780px; margin: 0 auto; padding: 80px 40px 40px; }
+    .advisor-section-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 20px; text-align: center; }
+    .advisor-card { display: flex; gap: 28px; background: var(--bg-card); border-radius: 16px; padding: 36px; box-shadow: var(--shadow-md); border: 1px solid var(--border); }
+    .advisor-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); flex-shrink: 0; }
+    .advisor-info { flex: 1; }
+    .advisor-label { font-family: var(--font-meta); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 4px; }
+    .advisor-name { font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--text-primary); }
+    .advisor-role { font-family: var(--font-meta); font-size: 13px; color: var(--text-light); margin-bottom: 12px; }
+    .advisor-summary { font-size: 14px; color: var(--text-mid); line-height: 1.75; }
+
+    /* ── Sagan info block ── */
+    .sagan-info { max-width: 780px; margin: 0 auto; padding: 0 40px 60px; }
+    .sagan-info-inner { display: flex; gap: 32px; justify-content: center; padding: 32px 0; border-top: 1px solid var(--border); }
+    .sagan-stat { text-align: center; }
+    .sagan-stat-number { font-family: var(--font-heading); font-size: 28px; font-weight: 700; color: var(--primary); }
+    .sagan-stat-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); margin-top: 4px; }
+
+    /* ── Footer CTA ── */
+    .footer-cta { background: var(--dark); padding: 72px 40px; text-align: center; }
+    .footer-cta h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 400; color: white; margin-bottom: 12px; }
+    .footer-cta h2 strong { font-weight: 700; }
+    .footer-cta p { font-size: 16px; color: rgba(255,255,255,0.5); margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .footer-contact { display: inline-block; padding: 14px 36px; background: var(--primary); color: white; border-radius: 8px; font-family: var(--font-meta); font-size: 14px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px; transition: background 0.2s ease, transform 0.15s ease; }
+    .footer-contact:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+    /* ── Footer ── */
+    .site-footer { text-align: center; padding: 32px; color: rgba(255,255,255,0.4); font-family: var(--font-meta); font-size: 12px; background: var(--dark); border-top: 1px solid rgba(255,255,255,0.08); }
+    .footer-logos { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 12px; }
+    .footer-logos img { height: 22px; opacity: 0.5; }
+    .footer-x { font-size: 16px; color: rgba(255,255,255,0.2); }
+    .site-footer a { color: var(--primary); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .hero { padding: 48px 24px 48px; }
+      .hero h1 { font-size: 32px; }
+      .hero-meta { gap: 24px; }
+      .card-top { flex-direction: column; padding: 24px; gap: 16px; }
+      .card-body { padding: 24px; }
+      .candidate-card { padding: 0 16px; }
+      .editorial { padding: 48px 24px; }
+      .fit-grid { grid-template-columns: 1fr; }
+      .strength-bars { grid-template-columns: 1fr; }
+      .advisor-card { flex-direction: column; text-align: center; }
+      .comparison-table { font-size: 11px; }
+      .sagan-info-inner { flex-direction: column; gap: 20px; }
+      .footer-cta { padding: 48px 24px; }
+      .footer-cta h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-top-bar"></div>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-brand">
+        <img class="logo-img" src="https://www.google.com/s2/favicons?domain=key%20account%20analyst&amp;sz=128" alt="Rubicon" />
+        <div class="logo-sep"></div>
+        <span class="logo-sub">Talent Selection</span>
+      </div>
+      <div class="hero-eyebrow">Sagan Talent Search</div>
+      <h1><strong>Key Account Analyst</strong> Candidates for Rubicon</h1>
+      <p class="hero-sub">Curated talent, vetted and matched to your specific needs. Each profile below has been carefully evaluated for role alignment, skills, and cultural fit.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Candidates</span>
+          <span class="hero-meta-value">4 profiles</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Batch</span>
+          <span class="hero-meta-value">1 &middot; June 1, 2026</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Advisor</span>
+          <span class="hero-meta-value">Vicky Martinez</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="editorial fade-in">
+    <div class="editorial-label">Our Selection Rationale</div>
+    <div class="editorial-text">
+      <p>Hi JossLynn and Damla,</p><p>I'm thrilled to share our top four Key Account Analyst candidates: Emilio, Cynthia, Milibeth, and Karina, who perfectly match your need for hands-on experience untangling complex billing data.</p><p>We handpicked this specific group because they all bring heavy-hitting accounting and finance backgrounds paired with advanced Excel and dashboarding skills, meaning they can hit the ground running to drive efficiency on your operations team.</p><p>Just let me know who stands out after you review their profiles and intro videos, and I'll get their interviews scheduled right away!</p>
+    </div>
+    <div class="editorial-divider"></div>
+  </section>
+
+  <section class="candidates-section">
+    <div class="candidates-header fade-in">
+      <h2>Candidate Profiles</h2>
+      <p>Each candidate has been carefully selected and evaluated for this role.</p>
+    </div>
+
+    <div class="batch-switcher" id="batch-switcher" data-count="1">
+      <button class="batch-btn active" onclick="showBatch(1)" data-batch="1">
+        <span>Batch 1</span>
+        <span class="batch-count">4</span>
+      </button>
+    </div>
+
+    <div id="batch-1" class="batch-panel">
+      <div class="candidates">
+        
+    <div class="candidate-card">
+      <div class="card featured" id="candidate-0">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar featured-avatar">ES</div>
+            <div>
+              <div class="card-name">Emilio S</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Mexico &middot; 3+ yrs Finance/Billing
+              </div>
+              <div class="card-badges">
+                
+                <span class="badge badge-shortlisted">Pre-Shortlisted</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$1,450/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Emilio is the wallet-friendly pick in this batch at $1,450/month. He's built VBA automation at AmWest Corp, which shows he thinks beyond just processing data. The billing background translates perfectly to CSA work.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Billing Analyst</div>
+                <div class="exp-company">Agile One Mexico &middot; MAR 2024 - CURRENT</div>
+                <div class="exp-highlight">Responsible for managing the end-to-end billing process, including analyzing financial data, preparing invoices, reconciling discrepancies, and ensuring accurate and timely billing.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Corporate Accountant</div>
+                <div class="exp-company">AmWest Corp. Mexico &middot; FEB 2021 - MAR 2024</div>
+                <div class="exp-highlight">Responsible for completing daily and monthly reconciliation reports for both internal and investor bank accounts, as well as providing tracking services for acquired loans from investors.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">Advanced Excel</span><span class="ctag ctag-key">VBA</span><span class="ctag ctag-key">SAP</span><span class="ctag ctag-key">ERP</span><span class="ctag ctag-key">Financial Analysis</span>
+            <span class="ctag">Process Automation</span>
+          </div>
+
+          
+          <div class="card-section-title">Rubicon Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">C2 English fluency → Fixes Rubicon's current language barrier issues with offshore provider</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Daily reconciliation experience → Matches need for accurate data tracking in Salesforce/Zendesk</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Built VBA automation tools → Shows process improvement mindset for high-volume ticket management</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Excel Proficiency</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Data Analysis</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">English Communication</div>
+              <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Process Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Customer Service</div>
+              <div class="bar-track"><div class="bar-fill" style="width:65%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Independent Work</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://drive.google.com/file/d/1iEh0q-IUYlymblomE_LudYrZf9ERGwxe/view?usp=drive_link" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Emilio brings exactly what Rubicon needs to fix their Philippines provider disaster. His C2 English eliminates the language barrier issue immediately. Three years as Corporate Accountant handling daily reconciliations for investor accounts means he understands high-stakes data accuracy. The VBA automation he built shows he doesn't just do the work, he improves the work. At $1,450/month, he's the most cost-effective option while still bringing genuine horsepower. His current billing analyst role at Agile One proves he can handle process-oriented tasks independently. Trade-off: He's more finance-focused than pure customer service, but his data skills are stronger than typical CSA candidates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-1">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">CS</div>
+            <div>
+              <div class="card-name">Cynthia S</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Mexico &middot; 3 yrs Finance/Billing Analytics
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$2,000/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Cynthia is the Swiss Army knife pick. She's lived in both accounting precision and customer-facing billing work at Concentrix. The Excel automation plus Tableau skills mean she can handle Rubicon's data translation needs without breaking stride.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Accounting &amp; Reporting Analyst</div>
+                <div class="exp-company">Angmar Medical Holdings, Inc. &middot; November 2024 - Present</div>
+                <div class="exp-highlight">● Generated daily, weekly, monthly, quarterly, and annual financial and operational reports using Advanced Excel, Sage 100 / Sage Intacct and HCHB, supporting accounting, finance, and operations decision-making.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Billing and Revenue Analyst - Remote</div>
+                <div class="exp-company">Concentrix (CNXC) &middot; April 2022- April 2023</div>
+                <div class="exp-highlight">● Reviewed and validated data to create monthly invoices according to company practices and enter into the Workday financial system; submitted invoices to customers via email.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Admin AP/AR</div>
+                <div class="exp-company">QFC Industries &middot; August 2021- April 2022</div>
+                <div class="exp-highlight">● Monitored AP inboxes for new email requests and entered invoices into accounting system (TBE)</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">Advanced Excel</span><span class="ctag ctag-key">Tableau</span><span class="ctag ctag-key">Workday</span><span class="ctag ctag-key">Sage Intacct</span><span class="ctag ctag-key">SAP Visual Analytics</span>
+            <span class="ctag">Customer Relations</span>
+          </div>
+
+          
+          <div class="card-section-title">Rubicon Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">Billing analyst at Concentrix: validated data for invoices → Direct match to CSA data validation workflow</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Advanced Excel with pivot tables/formulas → Handles Rubicon's Excel-heavy data translation requirements</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Maintained customer relations researching discrepancies → Covers the client communication piece Rubicon needs</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Advanced Excel</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Data Analysis</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Customer Communication</div>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Process Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">System Proficiency</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Problem Solving</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/4e89f9ab-929e-4a76-9d1e-e40de55c18f5" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Cynthia brings the rare combo of advanced Excel skills and customer service experience that Rubicon needs. Her billing analyst role at Concentrix involved validating data for monthly invoices and maintaining customer relationships. That's exactly the CSA workflow: data accuracy plus client communication. The automated dashboards she built at Angmar Medical show she thinks beyond just processing. She automates repetitive work. At $2,000/month she's mid-range in this batch, but the Tableau and SAP Visual Analytics background sets her apart. Trade-off: she's coming from finance, not pure customer service, but the data skills are rock solid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-2">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">LC</div>
+            <div>
+              <div class="card-name">Lady C</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Ecuador &middot; 6 yrs Accounting
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$2,800/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Lady brings genuine horsepower to this role. She's managed multi-entity accounting operations independently, which means she can handle Rubicon's complex data without handholding. The Excel skills run deep. Worth every penny for the process discipline alone.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Accounting Analyst</div>
+                <div class="exp-company">Good Brands &amp; Management LLC &middot; Dec 2025 – Present</div>
+                <div class="exp-highlight">• Manage full-cycle accounting for 5 US LLCs in QuickBooks Online — journal entries, accruals, reconciliations, AR/AP, and month-end close every period.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Finance &amp; Admin Manager</div>
+                <div class="exp-company">Sunshine Drain Services LLC &middot; Oct 2024 – Nov 2025</div>
+                <div class="exp-highlight">• Managed all accounting operations independently — GL maintenance, AR/AP, reconciliations, payroll support, and month-end close.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Office Administrator</div>
+                <div class="exp-company">Vancouver Croissant — Food Manufacturing &middot; Jan 2024 – Sep 2024</div>
+                <div class="exp-highlight">• Managed AR/AP and all financial transactions across multiple revenue streams.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Accounting Assistant</div>
+                <div class="exp-company">Geektech S.A. &middot; Mar 2019 – May 2023</div>
+                <div class="exp-highlight">• Ran full month-end and year-end close — journal entries, financial statements, and balance sheet reconciliations.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">QuickBooks Online</span><span class="ctag ctag-key">Excel Advanced</span><span class="ctag ctag-key">Multi-entity accounting</span><span class="ctag ctag-key">SOPs</span><span class="ctag ctag-key">Bill.com</span>
+            <span class="ctag">ServiceTitan</span>
+          </div>
+
+          
+          <div class="card-section-title">Rubicon Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">QuickBooks Online certified + advanced Excel → Direct match for Rubicon's data tracking in Salesforce/systems</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Built complete SOPs library from scratch → Addresses their need for process-oriented, consistent workers</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Managed 5 US LLCs independently → Shows ability to work with minimal supervision under pressure</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Data Analysis</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Excel Proficiency</div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Process Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Independent Work</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Client Communication</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">System Navigation</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/82a199bd-eed7-4ae8-b5b3-f70daa8a0797" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Lady is the most process-driven candidate in this batch. She's managed full-cycle accounting for 5 US LLCs simultaneously, doing monthly closes, reconciliations, and consolidated reporting. That's the kind of detail-oriented, systematic thinking Rubicon needs for their CSA role. The QuickBooks Online certification plus advanced Excel skills (VLOOKUP, INDEXMATCH, PivotTables) translate directly to their data translation requirements. She built an entire SOPs library from scratch at Sunshine Drain, showing she thinks in systems, not just tasks. The trade-off: she's at the top of your budget at $2,800/month. But you're getting someone who can work independently from day one and likely mentor the other CSAs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-3">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">KP</div>
+            <div>
+              <div class="card-name">Karina P</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Argetina &middot; 15 yrs Financial Analysis
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$2,800/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Karina is the adult in the room pick. She's operated at Fortune 500 scale for over a decade. The Coca-Cola regional billing experience means she can handle Rubicon's complex multi-client data without missing a beat. Built for the long haul.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Financial and administrative Analyst</div>
+                <div class="exp-company">DISTRIBUIDORA FALI &middot; April 2024 – Present</div>
+                <div class="exp-highlight">Evaluated customer's financial situations and prepare comprehensive financial reports.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Finance and Reporting Analyst</div>
+                <div class="exp-company">UNIVERSAL MUSIC ARGENTINA &middot; May 2018- Oct 2023</div>
+                <div class="exp-highlight">Marketing expense reports. Comparison of different financial indices, market share rankings, sales and distribution of labels. P&amp;L and Budget. Forecast. Variations. KPIs. New projects. Master data vendor and customer review and control. Sales operations reports. Control and Analysis of vendors invoices. Maintaining supplier files and records, create new suppliers, delete old vendors and maintain supplier master file current and updated. Control journal entries or accrue expenses in appropriate accounts, cost centers, projects and departments as needed. Confirm proper approval of invoices by the existence of Purchase Order, prior to incurring the expense. Insurance policies certifications. Contract payments, analysis and follow up. Prepares and submits carrier payments for each of the insurance brokers companies of Insurance policy. Review and reconcile vendor statements, research and correct discrepancies. T&amp;E Policies. Corporative Credit Cards Expenses. Contracts. Currentaccounts. Bank reconciliation. Other expenses. Compliance. SOX reports. Key User in SAP Implementation process. Control, relieve, analyze information from different sources.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Finance Analyst</div>
+                <div class="exp-company">COCA COLA Company &middot; Nov 2015- Oct 2017</div>
+                <div class="exp-highlight">Managed regional intercompany billing for 7+ LATAM countries (Argentina, Peru, Chile, Costa Rica, Mexico, Honduras, Guatemala). Intercompany invoices. Billing of Marketing campaigns. Journal entries. Management reports. Aging report. Claims and clearances. Reconciliations.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Administrative Financial Analyst</div>
+                <div class="exp-company">YPF &middot; Oct 2013-Apr 2015</div>
+                <div class="exp-highlight">Budget reports. royal vs. Committed. Provisions. Reclassifications of Cost Centers. Reconciliation Corporate Credit Cards. Travel expenses. Administrative tasks.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">SAP</span><span class="ctag ctag-key">Excel</span><span class="ctag ctag-key">P&amp;L Analysis</span><span class="ctag ctag-key">Financial Reporting</span><span class="ctag ctag-key">KPIs</span>
+            <span class="ctag">Budgeting</span>
+          </div>
+
+          
+          <div class="card-section-title">Rubicon Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">15 years advanced Excel with P&amp;L modeling → Rubicon needs complex data translation and pivot table mastery</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Managed 7-country regional billing at Coca-Cola → Can handle Rubicon's multi-client account management scale</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Built KPI presentations for Universal Music stakeholders → Matches Rubicon's requirement for 24-hour response tracking and reporting</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Excel Proficiency</div>
+              <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Data Analysis</div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Process Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Client Communication</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Systems Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Independent Work</div>
+              <div class="bar-track"><div class="bar-fill" style="width:94%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://drive.google.com/file/d/1tobEbBwwM7OtegLmZXlT0_PUWKeiS1Rb/view?usp=drive_link" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Karina brings enterprise-grade financial operations experience that's rare at this price point. Her 15-year progression through Coca-Cola, Universal Music, and HP shows she can handle complexity and scale. The regional intercompany billing for 7 countries at Coca-Cola directly translates to managing multiple client accounts at Rubicon. She's built comprehensive reports, managed P&amp;L analysis, and worked with global stakeholders. The SAP and advanced Excel background means zero ramp-up on data manipulation. At $2,800/month, she's the premium pick in this batch, but her enterprise experience could easily handle the workload of multiple junior hires.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="fade-in">
+        
+  <div class="comparison-section">
+    <div class="section-label" style="padding-bottom:20px;">
+      <h2>Side-by-Side Comparison</h2>
+      <p>Key criteria at a glance to help you prioritize interviews.</p>
+    </div>
+    <div class="comparison-table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Criteria</th>
+            <th>Emilio S</th><th>Cynthia S</th><th>Lady C</th><th>Karina P</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Location</strong></td><td>Mexico</td><td>Mexico</td><td>Ecuador</td><td>Argetina</td></tr>
+          <tr><td><strong>Experience</strong></td><td>3+ yrs Finance/Billing</td><td>3 yrs Finance/Billing Analytics</td><td>6 yrs Accounting</td><td>15 yrs Financial Analysis</td></tr>
+          <tr><td><strong>Key Employers</strong></td><td>Agile One Mexico, AmWest Corp. Mexico</td><td>Angmar Medical Holdings, Inc., Concentrix (CNXC), QFC Industries</td><td>Good Brands &amp; Management LLC, Sunshine Drain Services LLC, Vancouver Croissant — Food Manufacturing</td><td>DISTRIBUIDORA FALI, UNIVERSAL MUSIC ARGENTINA, COCA COLA Company</td></tr>
+          <tr><td><strong>Core Strength</strong></td><td>Advanced Excel, VBA, SAP</td><td>Advanced Excel, Tableau, Workday</td><td>QuickBooks Online, Excel Advanced, Multi-entity accounting</td><td>SAP, Excel, P&amp;L Analysis</td></tr>
+          <tr><td><strong>HRIS / Tools</strong></td><td>Advanced Excel, VBA, SAP, ERP, Financial Analysis</td><td>Advanced Excel, Tableau, Workday, Sage Intacct, SAP Visual Analytics</td><td>QuickBooks Online, Excel Advanced, Multi-entity accounting, SOPs, Bill.com</td><td>SAP, Excel, P&amp;L Analysis, Financial Reporting, KPIs</td></tr>
+          <tr><td><strong>Languages</strong></td><td>English, German, Spanish</td><td>English, Spanish</td><td>Spanish, English</td><td>English, Portuguese, Germany, Hebrew</td></tr>
+          <tr><td><strong>Education</strong></td><td>International Bussiness (Universidad de Guadalajara)</td><td>Graduate Certificate in Business Analytics (Lamar University); Bachelor of Science in Economics (University of Texas at Arlington)</td><td>Master of Business Administration (MBA) (University Canada West); Bachelor in Auditing · CPA-Certified Accountant (ESPOL — Escuela Superior Politécnica del Litoral)</td><td>Postgraduate Degree in Higher Education Teaching (Universidad Tecnológica Nacional (INSPT-UTN)); Bachelor of Business Administration (BBA) (University of Buenos Aires (UBA))</td></tr>
+          <tr><td><strong>Rate</strong></td><td class="highlight-cell">$1,450/mo</td><td>$2,000/mo</td><td>$2,800/mo</td><td>$2,800/mo</td></tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="advisor-section fade-in">
+    <div class="advisor-section-label">Your Talent Advisor</div>
+    <div class="advisor-card">
+      <img class="advisor-avatar" src="https://saganrecruitment.com/wp-content/uploads/2025/10/Vicky-Martinez.jpeg" alt="Vicky Martinez" />
+      <div class="advisor-info">
+        <div class="advisor-label">Sagan Talent Advisor</div>
+        <div class="advisor-name">Vicky Martinez</div>
+        <div class="advisor-role">Sagan · Recruitment Team — Talent Advisor</div>
+        <p class="advisor-summary">Vicky has over four years of experience building talent pipelines and conducting screenings. She is your direct point of contact for scheduling interviews and coordinating next steps.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sagan-info">
+    <div class="sagan-info-inner">
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">20,000+</div>
+        <div class="sagan-stat-label">Applications / month</div>
+      </div>
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">2,000+</div>
+        <div class="sagan-stat-label">Placements made</div>
+      </div>
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">30+</div>
+        <div class="sagan-stat-label">Countries</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer-cta fade-in">
+    <h2>Ready to <strong>meet your next Key Account Analyst?</strong></h2>
+    <p>Tell us who you want to interview and we'll set it up within 24 hours.</p>
+    <a class="footer-contact" href="mailto:jesus.p@getsagan.com">Schedule Next Steps</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-logos">
+      <img src="https://www.google.com/s2/favicons?domain=key%20account%20analyst&sz=128" alt="Rubicon" style="height:22px;" onerror="this.style.display='none'" />
+      <span class="footer-x">&times;</span>
+      <img src="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Logo-2-e1759568299542.png" alt="Sagan" />
+    </div>
+    <p>Prepared by <a href="https://getsagan.com" target="_blank">Sagan</a> for Rubicon &middot; Key Account Analyst Search &middot; June 1, 2026</p>
+  </footer>
+
+  <script>
+    function showBatch(n) {
+      document.querySelectorAll('.batch-panel').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.batch-btn').forEach(b => b.classList.remove('active'));
+      var panel = document.getElementById('batch-' + n);
+      var btn = document.querySelector('[data-batch="' + n + '"]');
+      if (panel) panel.classList.remove('hidden');
+      if (btn) btn.classList.add('active');
+    }
+
+    /* Scroll animations */
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+
+      /* Animate candidate cards */
+      document.querySelectorAll('.candidate-card').forEach(function(el) {
+        el.classList.add('fade-in');
+        observer.observe(el);
+      });
+
+      /* Animate strength bars on scroll */
+      var barObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var fills = entry.target.querySelectorAll('.bar-fill');
+            fills.forEach(function(fill) {
+              var w = fill.style.width;
+              fill.style.width = '0%';
+              setTimeout(function() { fill.style.width = w; }, 100);
+            });
+            barObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.strength-bars').forEach(function(el) { barObserver.observe(el); });
+    })();
+  </script>
+</body>
+</html>
