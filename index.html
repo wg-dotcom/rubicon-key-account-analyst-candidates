@@ -233,7 +233,13 @@
       .footer-cta { padding: 48px 24px; }
       .footer-cta h2 { font-size: 24px; }
     }
-  </style>
+  
+/* --- contrast fix: dark text on light-bg recruiter-note (dark-mode palette leaks white text otherwise) --- */
+.card-recruiter-note { color: #223037; }
+.card-recruiter-note p { color: #223037 !important; }
+.card-recruiter-note .recruiter-note-title { color: var(--primary-deeper, #00736b) !important; }
+
+</style>
 <style data-batch-switcher="1">.batch-switcher{display:flex;justify-content:center;align-items:center;gap:8px;margin:8px auto 36px;max-width:800px;padding:0 24px}.batch-switcher[data-count="1"]{display:none}.batch-btn{display:flex;align-items:center;gap:8px;padding:11px 22px;border:2px solid var(--border,#e2e8f0);border-radius:10px;background:white;font-size:14px;font-weight:600;color:#6b7280;cursor:pointer;transition:all .2s}.batch-btn:hover{border-color:var(--primary)}.batch-btn.active{background:var(--dark,#131a1b);border-color:var(--dark,#131a1b);color:white}.batch-count{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--primary);color:white;font-size:11px;font-weight:700}.batch-btn.active .batch-count{background:var(--highlight,#00f9b8);color:var(--dark,#131a1b)}.batch-panel.hidden{display:none}</style><style data-rt-card-css="1">.card-header{display:flex;align-items:flex-start;gap:16px;padding:24px 28px 16px}.rank-badge{width:36px;height:36px;background:var(--primary,#212529);color:white;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;flex-shrink:0}.card-name-block .card-name{font-size:22px;font-weight:800}.card-meta-row{display:flex;gap:16px;margin-top:6px;flex-wrap:wrap}.card-meta-item{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--text-light,#6b7280)}.card-meta-item svg{width:14px;height:14px}.card-meta-item strong{color:var(--text-dark,#1a1a2e)}.tags-row{padding:0 28px 16px;display:flex;flex-wrap:wrap;gap:6px}.tag{display:inline-block;padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600}.tag-filled{background:var(--tag-bg,#e9e9ea);color:var(--tag-color,#1e2125)}.tag-outlined{background:transparent;color:var(--text-mid,#374151);border:1.5px solid #ddd}.card-body-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid #f0f0f0;padding-top:20px;margin:0 28px 20px}.card-section{margin-bottom:0}.exp-entry .exp-role{font-weight:700;font-size:14px;color:var(--text-dark,#1a1a2e)}.exp-entry .exp-company{font-size:13px;color:var(--primary,#212529);font-weight:500}.exp-entry .exp-dates{font-size:12px;color:var(--text-light,#6b7280);margin-top:2px}.strength-list{padding-left:18px}.strength-list li{font-size:14px;color:var(--text-mid,#374151);margin-bottom:8px;line-height:1.6}.card-footer{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;background:#fafafa;border-top:1px solid #f0f0f0}.footer-note{font-size:13px;color:var(--text-light,#6b7280)}.footer-note strong{color:var(--text-dark,#1a1a2e)}.btn-group{display:flex;gap:8px}.btn-card{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;transition:all .15s;cursor:pointer}.btn-outline{background:white;color:var(--primary,#212529);border:1.5px solid var(--primary,#212529)}.btn-outline:hover{background:var(--tag-bg,#e9e9ea)}.btn-primary-card{background:var(--primary,#212529);color:white;border:1.5px solid var(--primary,#212529)}.btn-primary-card:hover{background:var(--primary-dark,#1c1f23)}.btn-card svg{width:15px;height:15px}.card-recruiter-note{margin:0 28px 20px;padding:16px 20px;background:#f4f4f4;border-radius:10px;border-left:3px solid var(--primary,#212529)}.card-recruiter-note .recruiter-note-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--primary,#212529);margin-bottom:8px}.card-recruiter-note p{font-size:14px;color:var(--text-mid,#374151);line-height:1.7}@media(max-width:768px){.card-header{flex-direction:column}.card-body-grid{grid-template-columns:1fr}}</style></head>
 <body>
 
@@ -1205,7 +1211,6 @@
           
           <div class="card-section-title">Experience Highlights</div>
           <div class="experience-list">
-            
             <div class="exp-item">
               <div class="exp-dot-col">
                 <div class="exp-dot"></div>
@@ -1214,7 +1219,8 @@
               <div class="exp-content">
                 <div class="exp-role">Junior Consultant &amp; Financial Analyst</div>
                 <div class="exp-company">Financial Consulting</div>
-                <div class="exp-highlight">Conduct financial and market analyses to support business decisions</div>
+                <div class="exp-date">Nov 2024 – Present</div>
+                <div class="exp-highlight">Financial and market analysis for restaurant groups and multifamily real estate clients · Excel and Google Sheets dashboards + monthly performance reports · Monthly audits, reconciliations, and data validation · Procurement, logistics, and vendor analysis · Presents financial reports to clients</div>
               </div>
             </div>
             <div class="exp-item">
@@ -1223,9 +1229,10 @@
                 <div class="exp-line"></div>
               </div>
               <div class="exp-content">
-                <div class="exp-role">Administrative Assistant</div>
-                <div class="exp-company">Personnel Transport</div>
-                <div class="exp-highlight">Managed internal logistics including vehicle coordination, scheduling, and location tracking</div>
+                <div class="exp-role">Library Management &amp; Organization Assistant</div>
+                <div class="exp-company">Library Services (Universidad de Guadalajara)</div>
+                <div class="exp-date">Mar 2024 – Sept 2024</div>
+                <div class="exp-highlight">Digitized and organized library records and catalog systems · Managed acquisitions, donations, losses, and cancellations · Cash handling and administrative transparency processes · Supported general library operations</div>
               </div>
             </div>
             <div class="exp-item">
@@ -1234,9 +1241,10 @@
                 
               </div>
               <div class="exp-content">
-                <div class="exp-role">Library Management and Organization Assistant</div>
-                <div class="exp-company">Library Services</div>
-                <div class="exp-highlight">Digitized and organized library records and catalog systems</div>
+                <div class="exp-role">Administrative Assistant</div>
+                <div class="exp-company">Personnel Transport</div>
+                <div class="exp-date">Jan 2022 – Jul 2023</div>
+                <div class="exp-highlight">Internal logistics: vehicle coordination, scheduling, and location tracking · Customer service including quotations and inquiry resolution · Invoice preparation and payment complement management · Supported operational efficiency across transport processes</div>
               </div>
             </div>
           </div>
@@ -1488,7 +1496,6 @@
           
           <div class="card-section-title">Experience Highlights</div>
           <div class="experience-list">
-            
             <div class="exp-item">
               <div class="exp-dot-col">
                 <div class="exp-dot"></div>
@@ -1497,7 +1504,8 @@
               <div class="exp-content">
                 <div class="exp-role">Strategic Collections Specialist</div>
                 <div class="exp-company">Records Management</div>
-                <div class="exp-highlight">Contact customer through email and phone calls to check about the payment of the invoices</div>
+                <div class="exp-date">Sept 2023 – Aug 2025</div>
+                <div class="exp-highlight">Managed US collections portfolio via phone and email · Exceeded monthly recovery targets · Negotiated payment plans and resolved billing disputes across time zones · Escalated complex cases to legal when warranted</div>
               </div>
             </div>
             <div class="exp-item">
@@ -1508,7 +1516,8 @@
               <div class="exp-content">
                 <div class="exp-role">Accounting Representative</div>
                 <div class="exp-company">Business Process Outsourcing</div>
-                <div class="exp-highlight">Prepare and issue accurate invoices to customers based on contracts, services rendered, or product deliveries</div>
+                <div class="exp-date">May 2022 – Sept 2023</div>
+                <div class="exp-highlight">Prepared and issued customer invoices from contracts and service records · Managed vendor invoicing, payment revisions, and issue resolution · Maintained customer billing records end-to-end</div>
               </div>
             </div>
             <div class="exp-item">
@@ -1518,8 +1527,9 @@
               </div>
               <div class="exp-content">
                 <div class="exp-role">Collections Analyst</div>
-                <div class="exp-company">IT / Manufacturing</div>
-                <div class="exp-highlight">1000 customers Portfolio assigned, contact them through phone, and email.</div>
+                <div class="exp-company">IT / Manufacturing (Fortune 500 tools portfolio)</div>
+                <div class="exp-date">Apr 2019 – May 2022</div>
+                <div class="exp-highlight">1,000-customer US and LatAm portfolio · Chargeback resolution and dispute lead · Exceeded monthly collection KPIs across three years of enterprise collections work</div>
               </div>
             </div>
             <div class="exp-item">
@@ -1530,7 +1540,8 @@
               <div class="exp-content">
                 <div class="exp-role">Ground &amp; Import Analyst</div>
                 <div class="exp-company">Cargo / Logistics</div>
-                <div class="exp-highlight">Coordinate ground cargo logistics, pickups and orders</div>
+                <div class="exp-date">Jun 2012 – Apr 2019</div>
+                <div class="exp-highlight">Coordinated import logistics, tariff rules, and vendor communications · Supported accounting operations and month-end/year-end close · Resolved billing disputes with sales and finance teams · Nearly 7-year tenure</div>
               </div>
             </div>
           </div>
@@ -1635,7 +1646,6 @@
           
           <div class="card-section-title">Experience Highlights</div>
           <div class="experience-list">
-            
             <div class="exp-item">
               <div class="exp-dot-col">
                 <div class="exp-dot"></div>
@@ -1643,8 +1653,9 @@
               </div>
               <div class="exp-content">
                 <div class="exp-role">Consultant</div>
-                <div class="exp-company">Legal Financial Consulting</div>
-                <div class="exp-highlight">• Client acquisition and management of legal and financial consulting engagements.</div>
+                <div class="exp-company">Legal &amp; Financial Consulting</div>
+                <div class="exp-date">Nov 2024 – Present</div>
+                <div class="exp-highlight">Client acquisition and management of legal/financial consulting engagements · Corporate advisory: incorporation, restructuring, and retirement benefit planning · Financial feasibility, cash flow modeling, and scenario analysis on investment projects · Executive financial reporting to partners and clients</div>
               </div>
             </div>
             <div class="exp-item">
@@ -1654,8 +1665,9 @@
               </div>
               <div class="exp-content">
                 <div class="exp-role">Actuarial Analyst</div>
-                <div class="exp-company">Actuarial Insurance Consulting</div>
-                <div class="exp-highlight">• Actuarial studies including deferred tax asset calculations (IAS 12 / IAS 19) for major corporations.</div>
+                <div class="exp-company">Actuarial &amp; Insurance Consulting</div>
+                <div class="exp-date">Aug 2023 – Oct 2024</div>
+                <div class="exp-highlight">Deferred tax asset calculations under IAS 12 / IAS 19 for major corporations · Technical reserves (IBNR and Unearned Risk) for insurance carriers · RStudio-based data cleansing and processing pipelines · Coded US public pension plans in SLOPE with direct international client interaction</div>
               </div>
             </div>
             <div class="exp-item">
@@ -1665,8 +1677,9 @@
               </div>
               <div class="exp-content">
                 <div class="exp-role">Internship</div>
-                <div class="exp-company">Higher Education</div>
-                <div class="exp-highlight">• Grading academic workshops.</div>
+                <div class="exp-company">Higher Education (Pontifical Catholic University of Ecuador)</div>
+                <div class="exp-date">May 2022 – Jun 2023</div>
+                <div class="exp-highlight">Grading academic workshops · Coordination of classes and student events · Personalized syllabus and course progress monitoring</div>
               </div>
             </div>
           </div>
